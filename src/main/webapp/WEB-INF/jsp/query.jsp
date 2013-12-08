@@ -19,6 +19,10 @@
                 clear:both;
                 padding-bottom:10px;
             }
+            fieldset li #error_span {
+                padding-left:140px;
+                color: red;
+            }
             fieldset input{
                 float:left;
             }
@@ -46,9 +50,13 @@
                 <ul>
                     <li> 
                         <label for="name">ZIP:</label>
-                        <input type="text" name="zip" id="zip" size="30" maxlength="5" required />
+                        <input type="text" name="zip" id="zip" size="30" maxlength="5" 
+                               required pattern="\b\d{5}\b" title="Must be 5 digits"/>
                         <button type="submit" id="send" name="send">Send</button> 
                     </li>
+                    <li> 
+                        <span id="error_span" name="error_span"></span>
+                    </li>                    
                 </ul>
             </fieldset>
             <br>
@@ -74,10 +82,12 @@
                   dataType: "json",
                   data: {zip: zip},
                   success: function(data) {
-                      populateTable(data);
+                    $("#error_span").html("");                      
+                    populateTable(data);
                   },
                   error: function(e) {
-                      alert(e);
+                    $("tbody").html("");
+                    $("#error_span").html(e.responseText);
                   }
               });
             });
