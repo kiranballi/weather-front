@@ -1,4 +1,4 @@
-package expedia.weatherfront.service;
+package expedia.weatherfront.service.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

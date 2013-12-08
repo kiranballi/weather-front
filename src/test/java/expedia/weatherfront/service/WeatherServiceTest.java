@@ -1,5 +1,6 @@
 package expedia.weatherfront.service;
 
+import expedia.weatherfront.service.bean.Weather;
 import org.junit.Test;
 import org.junit.Before;
 

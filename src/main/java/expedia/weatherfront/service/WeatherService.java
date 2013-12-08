@@ -1,5 +1,6 @@
 package expedia.weatherfront.service;
 
+import expedia.weatherfront.service.bean.Weather;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -9,12 +10,12 @@ public class WeatherService {
     
     private static final String KEY = "ed044d75b91fb500";
     
-    Weather getWeather(String zipCode) {
+    public Weather getWeather(String zip) {
         RestTemplate template = new RestTemplate();
         template.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
         
         Weather weather = template.getForObject("http://api.wunderground.com/api/"+KEY+
-                "/conditions/q/"+zipCode+".json", 
+                "/conditions/q/"+zip+".json", 
                 Weather.class);        
         return weather;
     }    
