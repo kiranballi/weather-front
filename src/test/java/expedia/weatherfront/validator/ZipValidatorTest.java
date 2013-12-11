@@ -1,8 +1,6 @@
 package expedia.weatherfront.validator;
 
-import expedia.weatherfront.service.bean.Weather;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import org.junit.Before;
 import org.junit.Test;
