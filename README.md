@@ -7,7 +7,7 @@ weather-front
 Quickstart
 ----------
 
-To run the application, just clone using `git clone git@github.com:totient/weather-front.git`. And run the command `mvn clean install tomcat7:run` while in the applicaiton directory. Then, point your browser to `http://<ip>:<port>/weather-front/`
+To run the application, just clone using `git clone git@github.com:totient/weather-front.git`, or `git clone https://github.com/totient/weather-front.git`. And run the command `mvn clean install tomcat7:run` while in the applicaiton directory. Then, point your browser to `http://<ip>:<port>/weather-front/`
 
 Requirement
 -----------
