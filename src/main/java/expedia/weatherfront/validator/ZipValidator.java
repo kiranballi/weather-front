@@ -1,4 +1,4 @@
-package expedia.weatherfront.controller;
+package expedia.weatherfront.validator;
 
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;

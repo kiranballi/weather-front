@@ -1,5 +1,6 @@
 package expedia.weatherfront.controller;
 
+import expedia.weatherfront.validator.ZipValidator;
 import expedia.weatherfront.bean.Temperature;
 import expedia.weatherfront.service.bean.Weather;
 import expedia.weatherfront.service.WeatherService;
