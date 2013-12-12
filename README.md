@@ -1,7 +1,7 @@
 weather-front
 =============
 
-`weather-front` is a simple weather application, built using Spring, Spring MVC, and Spring Web Services.
+`weather-front` is a simple weather application, built using Spring MVC.
 
 
 Quickstart
