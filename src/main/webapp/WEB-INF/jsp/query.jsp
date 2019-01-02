@@ -49,7 +49,7 @@
                 <legend><b>Query</b></legend>
                 <ul>
                     <li> 
-                        <label for="name">ZIP:</label>
+                        <label for="name">ZIP1:</label>
                         <input type="text" name="zip" id="zip" size="30" maxlength="5" 
                                required pattern="\b\d{5}\b" title="Must be 5 digits"/>
                         <button type="submit" id="send" name="send">Send</button> 
